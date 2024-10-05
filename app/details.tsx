@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { Stack, useLocalSearchParams } from 'expo-router';
 
 import { Container } from '~/components/Container';

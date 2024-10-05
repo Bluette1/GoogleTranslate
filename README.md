@@ -106,3 +106,7 @@ Contributions are welcome! If you have suggestions for improvements or new featu
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## User Stories
+For a comprehensive overview of the user stories for the Google Translate Clone app, please refer to our [Notion User Stories](https://www.notion.so/Google-Translate-Clone-app-116e6a4d98f2806a822fc514d24c96a9?pvs=4).
+
