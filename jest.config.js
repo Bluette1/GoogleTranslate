@@ -10,7 +10,7 @@ module.exports = {
     '^~/(.*)$': '<rootDir>/$1',
   },
   transformIgnorePatterns: [
-    '/node_modules/(?!react-native|@react-native|@react-navigation|expo-modules-core|expo-router|@expo-router|expo-splash-screen|jest-runtime|other-module-to-transform)', // Ensure needed modules are transformed
+    '/node_modules/(?!react-native|@react-native|@react-navigation|expo-modules-core|expo-router|@expo-router|expo-splash-screen|jest-runtime|@expo/vector-icons|other-module-to-transform)', // Ensure needed modules are transformed
   ],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
 };

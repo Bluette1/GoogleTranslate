@@ -5,6 +5,9 @@ jest.mock('expo-router', () => ({
   Link: jest.fn(),
 }));
 
+jest.mock('@expo/vector-icons/build/FontAwesome5', () => jest.fn());
+jest.mock('@expo/vector-icons/build/FontAwesome6', () => jest.fn());
+
 jest.mock('expo-modules-core', () => ({
   requireOptionalNativeModule: jest.fn(),
 }));
