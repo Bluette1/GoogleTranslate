@@ -2,6 +2,10 @@
 
 Welcome to the **Google Translate Clone**! This is a React Native application built with Expo that mimics the functionality of Google Translate, allowing users to translate text between multiple languages.
 
+![](./assets/Screenshot-Google-Translate-Clone%20.png)
+
+[Deployment Link](https://amethyst-tani-54.tiiny.site/)
+
 ## Table of Contents
 
 - [Features](#features)
