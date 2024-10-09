@@ -1,6 +1,7 @@
+import React, { useState } from 'react';
+
 import { FontAwesome5, FontAwesome6 } from '@expo/vector-icons';
 import { Audio } from 'expo-av';
-import { useState } from 'react';
 
 export default function AudioRecording({
   onNewRecording,
