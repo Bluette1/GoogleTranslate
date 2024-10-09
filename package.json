@@ -27,7 +27,7 @@
     "expo-system-ui": "~3.0.4",
     "expo-web-browser": "~13.0.3",
     "nativewind": "next",
-    "openai": "npm:openai",
+    "openai": "^4.67.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.74.5",

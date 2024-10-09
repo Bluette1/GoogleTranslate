@@ -1,9 +1,17 @@
 import 'jsr:@supabase/functions-js/edge-runtime.d.ts';
-import OpenAI from 'openai';
+import OpenAI from 'npm:openai';
+import { corsHeaders } from '../_shared/cors.ts';
 
 const openai = new OpenAI();
 
+
+console.log(`Function "browser-with-cors" up and running!`)
+
+
 Deno.serve(async (req) => {
+  if (req.method === 'OPTIONS') {
+    return new Response('ok', { headers: corsHeaders });
+  }
   const { input } = await req.json();
   const mp3 = await openai.audio.speech.create({
     model: 'tts-1',
@@ -15,6 +23,6 @@ Deno.serve(async (req) => {
   const mp3Base64 = btoa(String.fromCharCode(...buffer));
 
   return new Response(JSON.stringify({ mp3Base64 }), {
-    headers: { 'Content-Type': 'application/json' },
+    headers: { ...corsHeaders, 'Content-Type': 'application/json' },
   });
 });
