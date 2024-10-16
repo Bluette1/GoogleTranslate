@@ -2,6 +2,10 @@
 
 Welcome to the **Google Translate Clone**! This is a React Native application built with Expo that mimics the functionality of Google Translate, allowing users to translate text between multiple languages.
 
+![](./assets/Screenshot-Google-Translate-Clone%20.png)
+
+[Deployment Link](https://amethyst-tani-54.tiiny.site/)
+
 ## Table of Contents
 
 - [Features](#features)
@@ -23,8 +27,15 @@ Welcome to the **Google Translate Clone**! This is a React Native application bu
 - **React Native**: Framework for building native apps using React.
 - **Expo**: Framework and platform for universal React applications.
 - **JavaScript**: Core programming language for the application.
-- **Google Translate API**: For fetching translations.
-- **Supabase**: For the database
+- **OpenAI API**: For fetching translations and creating transcriptions.
+- **Supabase**: For edge functions and the database
+- **TDD (Test-Driven Development)**: For reliable and maintainable code
+
+Creation Story
+
+The idea for this project was born out of the need for a customizable translation tool that leverages modern APIs. Inspired by the capabilities of existing translation services, the goal was to create an open-source version with added flexibility and integration with cutting-edge technologies like OpenAI and Supabase. This project aims to provide developers with a robust platform to build upon and customize for their specific needs.
+
+[View a Step By Step Walk Through of How I Created the Project]()
 
 ## Getting Started
 
@@ -68,12 +79,12 @@ Welcome to the **Google Translate Clone**! This is a React Native application bu
 
 ### API Key Configuration
 
-In your code, make sure to replace the placeholder with your Google Translate API key. Typically, you would want to store your API key securely, possibly using environment variables.
+In your code, make sure to replace the placeholder with your OpenAI API key. Typically, you would want to store your API key securely, possibly using environment variables.
 
 Example:
 
 ```javascript
-const API_KEY = 'YOUR_GOOGLE_TRANSLATE_API_KEY'; // Replace with your actual API key
+const OPENAI_API_KEY = 'YOUR_OPENAI_API_KEY'; // Replace with your actual API key
 ```
 
 ## Usage
@@ -103,6 +114,119 @@ Contributions are welcome! If you have suggestions for improvements or new featu
    ```
 5. Open a pull request.
 
+## User Stories
+
+For a comprehensive overview of the user stories for the Google Translate Clone app, please refer to our [Notion User Stories](https://www.notion.so/Google-Translate-Clone-app-116e6a4d98f2806a822fc514d24c96a9?pvs=4).
+
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+<!-- --------- -->
+# Google Translate Clone
+
+## Overview
+
+This project is a clone of the Google Translate service, providing text-to-text translation from one language to another using OpenAPI. It includes text-to-speech and speech-to-text features.
+
+## Features
+
+- **Text Translation**: Translate text between various languages.
+- **Language Detection**: Automatically detect the input language.
+- **Text-to-Speech Translation**
+- **Speech-to-Text Translation**
+- **User-Friendly Interface**: Intuitive and clean UI for seamless interaction.
+- **Responsive Design**: Optimized for both iOS and Android devices.
+- **User Authentication**
+- **Real-time Database Updates**
+
+## Technologies Used
+
+- **JavaScript** with Babel for modern syntax
+- **Supabase** for backend services
+- **OpenAPI** for translation functionalities
+- **TDD (Test-Driven Development)** for reliable and maintainable code
+
+## Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/Bluette1/google-translate-clone.git
+   ```
+
+2. **Navigate to the project directory:**
+
+   ```bash
+   cd google-translate-clone
+   ```
+
+3. **Install the dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+4. **Set up environment variables:**
+
+   Create a `.env` file and add your Supabase and OpenAPI credentials.
+
+5. **Run the application:**
+
+   ```bash
+   npm start
+   ```
+
+## Export as Static Website
+
+1. **Build the application:**
+
+   ```bash
+   npm run build
+   ```
+
+2. **Export as static files:**
+
+   Ensure your build script generates static files in a directory like `dist` or `build`.
+
+3. **Deploy the static files:**
+
+   Upload the static files to [tiiny.site](https://tiiny.site) or any other static hosting service.
+
+## Testing
+
+To run the tests, execute:
+
+```bash
+npm test
+```
+
+## Deployment
+
+The application is deployed on [tiiny.site](https://tiiny.site).
+
+## Contributing
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature-branch`.
+3. Make your changes and commit: `git commit -m 'Add some feature'`.
+4. Push to the branch: `git push origin feature-branch`.
+5. Submit a pull request.
+
+## User Stories
+
+For a comprehensive overview of the user stories for the Google Translate Clone app, please refer to our [Notion User Stories](https://www.notion.so/Google-Translate-Clone-app-116e6a4d98f2806a822fc514d24c96a9?pvs=4).
+
+## Acknowledgements
+[Building a Google Translate Clone with React Native and Expo](https://www.youtube.com/live/wIS27dSWpfo)
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contact
+
+For questions or collaboration, feel free to contact the project maintainer.
+
+
